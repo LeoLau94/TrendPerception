@@ -229,13 +229,13 @@ presets:
         push: true                 # 每个时段只推送一次
 
     periods:
-      deep_quiet:
-        name: "深夜静默"
-        start: "23:00"
-        end: "06:00"                 # 23:00 → 次日 06:00（跨日时间段）
-        collect: true                # 夜间继续采集数据
-        analyze: true                # 夜间可以跑 AI 分析（反正不推送）
-        push: false                  # 深夜不推送，避免打扰
+      # deep_quiet:
+      #   name: "深夜静默"
+      #   start: "23:00"
+      #   end: "06:00"                 # 23:00 → 次日 06:00（跨日时间段）
+      #   collect: true                # 夜间继续采集数据
+      #   analyze: true                # 夜间可以跑 AI 分析（反正不推送）
+      #   push: false                  # 深夜不推送，避免打扰
 
       morning_briefing:
         name: "到岗速览"
@@ -280,9 +280,9 @@ presets:
     # 工作日使用三段式推送；周末使用增量自由模式
     day_plans:
       workday:
-        periods: ["deep_quiet", "morning_briefing", "noon_update", "closing_summary"]
+        periods: ["morning_briefing", "noon_update", "closing_summary"]
       weekend:
-        periods: ["deep_quiet", "weekend_free"]  # 周末：有新增就推，不打扰睡眠
+        periods: ["weekend_free"]  # 周末：有新增就推，不打扰睡眠
 
     week_map:
       1: "workday"                 # 周一 → 工作日计划
