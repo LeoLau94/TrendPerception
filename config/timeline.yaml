@@ -228,15 +228,15 @@ presets:
         analyze: true              # 每个时段只分析一次
         push: true                 # 每个时段只推送一次
 
-    deep_quiet:
-      name: "深夜静默"
-      start: "23:00"
-      end: "06:00"                 # 23:00 → 次日 06:00（跨日时间段）
-      collect: true                # 夜间继续采集数据
-      analyze: true                # 夜间可以跑 AI 分析（反正不推送）
-      push: false                  # 深夜不推送，避免打扰
-
     periods:
+      deep_quiet:
+        name: "深夜静默"
+        start: "23:00"
+        end: "06:00"                 # 23:00 → 次日 06:00（跨日时间段）
+        collect: true                # 夜间继续采集数据
+        analyze: true                # 夜间可以跑 AI 分析（反正不推送）
+        push: false                  # 深夜不推送，避免打扰
+
       morning_briefing:
         name: "到岗速览"
         start: "09:00"
