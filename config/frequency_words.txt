@@ -153,7 +153,7 @@
 #                         企业与品牌
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+# /胖东来|于东来/ => 胖东来
 
 /深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
 
@@ -163,10 +163,10 @@
 
 /大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
 
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+# /宇树|王兴兴|\bUnitree\b/ => 宇树机器人
 
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
+# /智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
+# /众擎|EngineAI|赵同阳/ => 众擎机器人
 
 /黑神话|冯骥/ => 黑神话悟空
 
@@ -182,7 +182,8 @@
 
 /腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
 
-/qwen|minimax|glm/ => 国产开源模型
+/qwen|minimax|glm|DeepSeek/ => 国产开源模型
+/doubao|kimi|混元/ => 国产闭源模型
 
 /特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
 
@@ -222,6 +223,9 @@
 
 印度
 
+/中东|\bmid-east\b|\bmid east\b|以色列|\bIsarel\b|巴勒斯坦|\bPalestine\b|沙特阿拉伯|\bSaudi Arabia\b|伊朗|\bIran\b|伊拉克|\bIraq\b|叙利亚|\bSyria\b|约旦|\bJordan\b|黎巴嫩|\bLebanon\b/ => 中东
+
+/俄乌冲突|俄乌战争|\bRussia\b|\bUkraine\b/ => 俄乌
 
 # ═══════════════════════════════════════════════════════════════
 #                         科技领域
@@ -253,6 +257,13 @@
 量子
 脑机
 基因
+核聚变
 
 # 产业政策
 生产力
+
+[政治与战争]
+/特朗普|川普|\b Trump\b|\bDonald Trump\b/ => 懂王
+/黄金|gold/ => 黄金
+/爱泼斯坦|\bEpstein\b|\bJeffrey Edward Epstein\b/ => 爱泼斯坦
+/高市早苗|\bTakaichi Sanae\b/ => 高市早苗
