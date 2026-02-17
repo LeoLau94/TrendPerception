@@ -523,4 +523,4 @@ custom:
   #
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   overlap:
-    policy: "error_on_overlap"
+    policy: "last_wins"
