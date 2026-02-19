@@ -78,8 +78,8 @@ class AIClient:
         max_tokens = kwargs.get("max_tokens", self.max_tokens)
         if max_tokens and max_tokens > 0:
             params["max_tokens"] = max_tokens
-            if 'kimi' in self.model:
-                params["max_completion_tokens"] = max_tokens
+            # if 'kimi' in self.model:
+            #     params["max_completion_tokens"] = max_tokens
 
         # 添加 fallback 模型（如果配置了）
         if self.fallback_models:
